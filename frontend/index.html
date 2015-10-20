@@ -6,30 +6,25 @@
   <title>Jah London Travel Hacker App!</title>
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular.js"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
-  <script src="../api/node_modules/angular-chart.js/node_modules/chart.js/Chart.min.js"></script>
-  <script src="../api/node_modules/angular-chart.js/dist/angular-chart.min.js"></script>
-  <link rel="stylesheet" href="../api/node_modules/angular-chart.js/dist/angular-chart.css" />"></script>
-
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.js"></script>
+  <script type="text/javascript" src="./node_modules/tc-angular-chartjs/dist/tc-angular-chartjs.js"></script>
   <script src="js/app.js"></script>
-
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+  <script src="js/controllers/pieController.js"></script>
   <script src="js/controllers/stationsController.js"></script>
+
 
   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/angular.chartjs/latest/angular-chart.css"/>
   <link rel="stylesheet" href="css/style.css">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body ng-app='TravelHackerApp'>
-  <div ng-controller='stationsController as stations'>
+ 
   <header>
     <div class="pure-g">
-        <div class="pure-u-3-24">
-
-        </div>
-        <div class="pure-u-3-24">
-
-        </div>
         <div class="center pure-u-15-24">
           <h1 class="header-logo">
             <a href="#/">Jah London Travel Hacker App!</a>
@@ -40,7 +35,7 @@
     </div>
   </header>
 
-    <div class="pure-g">
+    <div class="pure-g" ng-controller='stationsController as stations'>
       <div class="pure-u-3-24"></div>
       <div class="pure-u-18-24">
         <div ui-view></div>
@@ -48,14 +43,15 @@
       <div class="pure-u-3-24"></div>
     </div>
 
-    <div class="pure-g">
-      <div class="pure-u-3-24"></div>
-      <div class="pure-u-18-24">
-        <footer></footer>
-      </div>
-      <div class="pure-u-3-24"></div>
-    </div>
-  </div>
+
+<!--   <div ng-controller='PieCtrl as pie'>
+       <canvas tc-chartjs-doughnut chart-data="pie.myData" width="350" height="350">
+         
+       </canvas>
+  </div> -->
+
+  
+ 
 
 </body>
  

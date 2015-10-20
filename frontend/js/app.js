@@ -1,5 +1,5 @@
 angular
-  .module('TravelHackerApp', ['ui.router'])
+  .module('TravelHackerApp', ['ui.router'],['chart.js'],['tc.chartjs'])
   .constant('API', 'http://localhost:3000/api')
   .config(MainRouter);
 
