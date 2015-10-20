@@ -4,5 +4,8 @@ angular.module('TravelHackerApp')
 stationsController.$inject = ['$http'];
 
 function stationsController($http){
+
+
   console.log('I am the controller');
+  
 }

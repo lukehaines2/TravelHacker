@@ -2,6 +2,7 @@ var Post = require('../models/Station');
 
 // GET
 function getAll(request, response) {
+  console.log('hello')
   // Station.find(function(error, posts) {
   //   if(error) response.json({message: 'Paco Could not find any post'});
 
