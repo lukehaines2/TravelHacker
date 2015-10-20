@@ -1,11 +1,23 @@
 body {
   background-color: hotpink;
   font-size: 16px;
-
+  color: black;
 }
+
 ul {
   list-style: none;
 }
 li {
   letter-spacing: 120%;
+}
+
+.header-logo {
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid red;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
