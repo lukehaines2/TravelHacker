@@ -13,6 +13,9 @@ function stationsController($http){
   // self.addPost = addPost;
   // self.newPost = {};
   self.getStations = getStations;
+  
+  self.oneStation = {};
+  self.getStation = getStation;
   // self.updateStation = updateStation;
   // self.deleteStation = deleteStation;
 
@@ -26,6 +29,17 @@ function stationsController($http){
         self.all = response.data.stations;
     });
   }
+//getStation(id);
+  function getStation(id){
+    console.log('getting one station')
+    $http
+      .get('http://localhost:3000/stations/' + id)
+      .then(function(response){
+        self.oneStation = response.data.station;
+        console.log('station', self.oneStation.name);
+    });
+  }
+
 
   // function addStation(){
   //   $http

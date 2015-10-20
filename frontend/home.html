@@ -3,8 +3,10 @@
   <ul id="stations">
     <div>
       <li class="" ng-repeat="station in stations.all" data-id="{{ station._id }}">{{ station.name }}
+      <a ui-sref="graph"
+        ng-click="stations.getStation(station._id)">link</a>
       </li>
     </div>
   </ul>
-    <a ui-sref="graph">link</a>
+    
 </section>

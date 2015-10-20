@@ -1,9 +1,13 @@
 <h1>Hello graph new</h1>
 <section>
+<p>name: {{ stations.oneStation.name }}</p>
+
   <ul id="stations">
     <div>
-      <li class="" ng-repeat="station in stations.all" data-id="{{ station._id }}">rate: {{ station.ratings[0].rate }}
-      </li>
+      
+        <li class="" ng-repeat="rating in stations.oneStation.ratings">rate: {{ rating.rate }}
+        </li>
+      
     </div>
   </ul>
 </section>
