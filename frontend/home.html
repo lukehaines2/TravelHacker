@@ -1,5 +1,25 @@
 <h1>home</h1>
 <section>
+  <!-- <form ui-sref="graph" ng-click="stations.getStation(station._id)"> -->
+  <div>
+    <label for="inputSelectStation">Select Station: </label> 
+    <select name="inputSelectStation" ng-model="data.inputSelectStation">
+    <option ng-repeat="station in stations.all" value="{{station._id}}">{{station.name}}</option>
+    </select>
+    <br>
+    <label for="inputSelectArrive">Select Arrive: </label>
+    <input name="inputSelectArrive" ng-model="data.inputSelectArrive" type="time" min="05:30" max="23:50" step="300"> 
+    <br>
+    <button class="button" ui-sref="graph" ng-click="stations.getStation(data)">Go</button>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- <section>
   <ul id="stations">
     <div>
       <li class="" ng-repeat="station in stations.all" data-id="{{ station._id }}">{{ station.name }}
@@ -9,4 +29,4 @@
     </div>
   </ul>
     
-</section>
+</section> -->

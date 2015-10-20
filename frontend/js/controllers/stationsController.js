@@ -4,8 +4,6 @@ angular.module('TravelHackerApp')
 stationsController.$inject = ['$http'];
 
 function stationsController($http){
-
-
   console.log('I am the controller');
   
   var self = this;
@@ -14,6 +12,7 @@ function stationsController($http){
   // self.newPost = {};
   self.getStations = getStations;
   
+  self.dataFromUser = {};
   self.oneStation = {};
   self.getStation = getStation;
   // self.updateStation = updateStation;
@@ -29,14 +28,17 @@ function stationsController($http){
         self.all = response.data.stations;
     });
   }
-//getStation(id);
-  function getStation(id){
-    console.log('getting one station')
+
+  function getStation(data){
+    console.log('getting one station', data.inputSelectStation);
+    console.log('getting time due', data.inputSelectArrive);
     $http
-      .get('http://localhost:3000/stations/' + id)
+      .get('http://localhost:3000/stations/' + data.inputSelectStation)
       .then(function(response){
+        self.dataFromUser = { data };
         self.oneStation = response.data.station;
-        console.log('station', self.oneStation.name);
+        console.log('station id IS!!!!!:', self.oneStation.name);
+        console.log('station id IS!!!!!:', self.dataFromUser);
     });
   }
 
