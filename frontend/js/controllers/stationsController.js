@@ -8,11 +8,6 @@ function stationsController($http){
 
   console.log('I am the controller');
   
-
-
-
-
-
   var self = this;
   self.all = [];
   // self.addPost = addPost;
