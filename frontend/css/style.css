@@ -1,17 +1,29 @@
 body {
   background-color: hotpink;
   font-size: 16px;
-
+  color: black;
 }
+
 ul {
   list-style: none;
 }
 li {
   letter-spacing: 120%;
 }
+
 label {
   margin: 10px 0;
 }
 input {
   margin: 10px 0;
+
+
+.header-logo {
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid red;
 }
+
+a {
+  text-decoration: none;
+  color: black;
