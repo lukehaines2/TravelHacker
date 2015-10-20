@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "angular-chart.js": "^0.8.5",
     "body-parser": "^1.14.1",
     "cors": "^2.7.1",
     "debug": "^2.2.0",
