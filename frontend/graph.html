@@ -1,13 +1,8 @@
 <h1>Hello graph new</h1>
 <section>
 <p>name: {{ stations.oneStation.name }}</p>
-
-  <ul id="stations">
-    <div>
-      
-        <li class="" ng-repeat="rating in stations.oneStation.ratings">rate: {{ rating.rate }}
-        </li>
-      
+    <div class="graphicBar" ng-repeat="rating in stations.oneStation.ratings" style="height: {{rating.rate}}0px;" ng-class="{{rating.rate}} > 8 ? 
+      {{rating.rate}} > 9 ? 'yellow' : 'blue' 
+    : 'red'; ">
     </div>
-  </ul>
 </section>
