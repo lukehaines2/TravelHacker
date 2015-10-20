@@ -116,19 +116,19 @@ station1.ratings.push({
 
 
 station1.ratings.push({
-  rate: 7,
+  rate: 10,
   timeSlot: 100,
   dayOfWeek: 'Monday'
 })
 
 station1.ratings.push({
-  rate: 9,
+  rate: 9.5,
   timeSlot: 98,
   dayOfWeek: 'Monday'
 })
 
 station1.ratings.push({
-  rate: 9,
+  rate: 9.5,
   timeSlot: 99,
   dayOfWeek: 'Monday'
 })
@@ -146,6 +146,12 @@ station1.ratings.push({
 })
 
 station1.ratings.push({
+  rate: 10,
+  timeSlot: 99,
+  dayOfWeek: 'Monday'
+})
+
+station1.ratings.push({
   rate: 9,
   timeSlot: 98,
   dayOfWeek: 'Monday'
@@ -158,13 +164,13 @@ station1.ratings.push({
 })
 
 station1.ratings.push({
-  rate: 7.5,
+  rate: 8,
   timeSlot: 103,
   dayOfWeek: 'Monday'
 })
 
 station1.ratings.push({
-  rate: 7,
+  rate: 7.5,
   timeSlot: 104,
   dayOfWeek: 'Monday'
 })
@@ -216,6 +222,25 @@ station1.ratings.push({
   timeSlot: 103,
   dayOfWeek: 'Monday'
 })
+
+station1.ratings.push({
+  rate: 8.5,
+  timeSlot: 97,
+  dayOfWeek: 'Monday'
+})
+
+station1.ratings.push({
+  rate: 8,
+  timeSlot: 96,
+  dayOfWeek: 'Monday'
+})
+
+station1.ratings.push({
+  rate: 8,
+  timeSlot: 95,
+  dayOfWeek: 'Monday'
+})
+
 
 station1.save(function(err,station){
   if(err) console.log(err)
