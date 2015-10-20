@@ -10,13 +10,12 @@ function MainRouter($stateProvider, $urlRouterProvider, $locationProvider) {
     .state('home', {
       url: '/',
       templateUrl: 'home.html'
+    }),
+  $stateProvider // page for graphics
+    .state('graph', {
+      url: '/graph',
+      templateUrl: 'graph.html'
     })
-  //   ,
-  // $stateProvider // Order by Author
-  //   .state('author', {
-  //     url: '/author',
-  //     templateUrl: 'author.html'
-  //   }),
   // $stateProvider // Order by Date
   //   .state('new', {
   //     url: '/new',
