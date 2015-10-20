@@ -11,7 +11,6 @@ var station1 = new Station({
   name: "Vauxhall"
 })
 
-
 station1.ratings.push({
   rate: 7,
   timeSlot: 100,
@@ -23,18 +22,23 @@ station1.save(function(err,station){
     console.log('station1 saved', station)
 })
 
-// {
-// "station_code": "PIM",
-// "atcocode": "9400ZZLUPCO",
-// "name": "Pimlico",
-// "mode": "tube",
-// "longitude": -0.13376,
-// "latitude": 51.4891,
-// "lines": [
-// "victoria"
-// ],
-// "distance": 1357
-// },
+
+var station2 = new Station({
+  name: "Pimlico"
+})
+
+station2.ratings.push({
+  rate: 9,
+  timeSlot: 80,
+  dayOfWeek: 'Friday'
+})
+
+station2.save(function(err,station){
+  if(err) console.log(err)
+    console.log('station2 saved', station)
+})
+
+
 // {
 // "station_code": "OVL",
 // "atcocode": "9400ZZLUOVL",
