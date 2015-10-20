@@ -1,12 +1,12 @@
 var mongoose = require('mongoose');
 
-// var Rating = mongoose.model('Rating');
+var Rating = mongoose.model('Rating');
 
-var StationSchema = mongoose.Schema({
+var stationSchema = mongoose.Schema({
   name: String,
-  rate: [{ type: mongoose.Schema.ObjectId, ref: 'Rating' }] ,
+  ratings: [Rating.schema],
   createdAt: { type : Date, default: Date.now }
 });
 
-module.exports = mongoose.model('Station', StationSchema);
+module.exports = mongoose.model('Station', stationSchema);
 

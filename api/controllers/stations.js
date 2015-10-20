@@ -1,13 +1,18 @@
-var Post = require('../models/Station');
+
+var Rating = require('../models/rating');
+var Station = require('../models/station');
 
 // GET
 function getAll(request, response) {
-  console.log('hello')
-  // Station.find(function(error, posts) {
-  //   if(error) response.json({message: 'Paco Could not find any post'});
+  
+  Station.find(function(error, stations) {
+    if(error) response.json({message: 'Paco Could not find any station'});
 
-  //   response.json({posts: posts});
-  // }).select('-__v');
+    console.log("stations is ", stations)
+
+    response.json({stations: stations});
+  }).select('-__v');
+
 }
 
 // POST
