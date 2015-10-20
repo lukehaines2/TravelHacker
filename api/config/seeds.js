@@ -11,7 +11,6 @@ var station1 = new Station({
   name: "Vauxhall"
 })
 
-
 station1.ratings.push({
   rate: 7,
   timeSlot: 100,
@@ -23,18 +22,164 @@ station1.save(function(err,station){
     console.log('station1 saved', station)
 })
 
-// {
-// "station_code": "PIM",
-// "atcocode": "9400ZZLUPCO",
-// "name": "Pimlico",
-// "mode": "tube",
-// "longitude": -0.13376,
-// "latitude": 51.4891,
-// "lines": [
-// "victoria"
-// ],
-// "distance": 1357
-// },
+
+var station2 = new Station({
+  name: "Vauxhall"
+})
+
+station2.ratings.push({
+  rate: 9,
+  timeSlot: 98,
+  dayOfWeek: 'Tuesday'
+})
+
+station2.save(function(err,station){
+  if(err) console.log(err)
+    console.log('station2 saved', station)
+})
+
+var station3 = new Station({
+  name: "Vauxhall"
+})
+
+station3.ratings.push({
+  rate: 9,
+  timeSlot: 99,
+  dayOfWeek: 'Tuesday'
+})
+
+station3.save(function(err,station){
+  if(err) console.log(err)
+    console.log('station3 saved', station)
+})
+
+var station4 = new Station({
+  name: "Vauxhall"
+})
+
+station4.ratings.push({
+  rate: 10,
+  timeSlot: 101,
+  dayOfWeek: 'Tuesday'
+})
+
+station4.save(function(err,station){
+  if(err) console.log(err)
+    console.log('station4 saved', station)
+})
+
+var station5 = new Station({
+  name: "Vauxhall"
+})
+
+station5.ratings.push({
+  rate: 8,
+  timeSlot: 98,
+  dayOfWeek: 'Tuesday'
+})
+
+station5.save(function(err,station){
+  if(err) console.log(err)
+    console.log('station5 saved', station)
+})
+
+var station6 = new Station({
+  name: "Vauxhall"
+})
+
+station6.ratings.push({
+  rate: 9,
+  timeSlot: 98,
+  dayOfWeek: 'Tuesday'
+})
+
+station6.save(function(err,station){
+  if(err) console.log(err)
+    console.log('station6 saved', station)
+})
+
+
+var station7 = new Station({
+  name: "Vauxhall"
+})
+
+station7.ratings.push({
+  rate: 8,
+  timeSlot: 102,
+  dayOfWeek: 'Tuesday'
+})
+
+station7.save(function(err,station){
+  if(err) console.log(err)
+    console.log('station7 saved', station)
+})
+
+
+var station8 = new Station({
+  name: "Vauxhall"
+})
+
+station8.ratings.push({
+  rate: 7.5,
+  timeSlot: 103,
+  dayOfWeek: 'Tuesday'
+})
+
+station8.save(function(err,station){
+  if(err) console.log(err)
+    console.log('station8 saved', station)
+})
+
+
+var station9 = new Station({
+  name: "Vauxhall"
+})
+
+station9.ratings.push({
+  rate: 7,
+  timeSlot: 104,
+  dayOfWeek: 'Tuesday'
+})
+
+station9.save(function(err,station){
+  if(err) console.log(err)
+    console.log('station9 saved', station)
+})
+
+
+var station10 = new Station({
+  name: "Vauxhall"
+})
+
+station10.ratings.push({
+  rate: 7,
+  timeSlot: 105,
+  dayOfWeek: 'Tuesday'
+})
+
+station10.save(function(err,station){
+  if(err) console.log(err)
+    console.log('station10 saved', station)
+})
+
+
+var station11 = new Station({
+  name: "Vauxhall"
+})
+
+station11.ratings.push({
+  rate: 7,
+  timeSlot: 106,
+  dayOfWeek: 'Tuesday'
+})
+
+station11.save(function(err,station){
+  if(err) console.log(err)
+    console.log('station11 saved', station)
+})
+
+
+
 // {
 // "station_code": "OVL",
 // "atcocode": "9400ZZLUOVL",
