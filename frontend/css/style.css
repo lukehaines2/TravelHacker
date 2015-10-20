@@ -11,6 +11,13 @@ li {
   letter-spacing: 120%;
 }
 
+label {
+  margin: 10px 0;
+}
+input {
+  margin: 10px 0;
+
+
 .header-logo {
   text-align: center;
   text-decoration: none;
@@ -20,4 +27,3 @@ li {
 a {
   text-decoration: none;
   color: black;
-}
