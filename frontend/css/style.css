@@ -5,6 +5,7 @@ body {
   background-size: cover;
   font-size: 16px;
   color: white;
+    /*min-width: 390px;*/
 }
 
 .landing-box {
@@ -55,5 +56,49 @@ a {
 section .selected-station {
   text-align: center;
   /*border: 5px solid red;*/
+}
+
+.bar-holder {
+  display: inline-table;
+  margin: 0.04%;
+  border: 1px solid black;
+  width: 3.7%;
+  text-align:center;
+}
+
+.graphicBar {
+  /*display: inline-table;
+  margin: 0.04%;
+  border: 1px solid black;
+  width: 3.7%;*/
+}
+
+.x-label {
+ /* display: inline-table;
+  margin: 0.04%;
+  width: 3.7%;
+  border: 1px solid black;*/
+}
+
+.red {
+  background-color: red;
+}
+.orange {
+  background-color: orange;
+}
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
+.pink {
+  background-color: pink;
+}
+
+.vertical-text {
+  transform: rotate(90deg);
+  transform-origin: left top 0;
 }
 
