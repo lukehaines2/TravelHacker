@@ -11,20 +11,282 @@ var station1 = new Station({
   name: "Vauxhall"
 })
 
+var station2 = new Station({
+  name: "Paddington"
+})
+
+var station3 = new Station({
+  name: "Edgware Road"
+})
+
+var station4 = new Station({
+  name: "Marylbone"
+})
+
+var station5 = new Station({
+  name: "Baker Street"
+})
+
+var station6 = new Station({
+  name: "Regent's Park"
+})
+
+var station7 = new Station({
+  name: "Oxford Circus"
+})
+
+var station8 = new Station({
+  name: "Picadilly Circus"
+})
+
+var station9 = new Station({
+  name: "Charing Cross"
+})
+
+var station10 = new Station({
+  name: "Embankment"
+})
+
 station1.ratings.push({
   rate: 7,
   timeSlot: 100,
   dayOfWeek: 'Tuesday'
 })
 
+station1.ratings.push({
+  rate: 9,
+  timeSlot: 98,
+  dayOfWeek: 'Tuesday'
+})
+
+station1.ratings.push({
+  rate: 9,
+  timeSlot: 99,
+  dayOfWeek: 'Tuesday'
+})
+
+station1.ratings.push({
+  rate: 10,
+  timeSlot: 101,
+  dayOfWeek: 'Tuesday'
+})
+
+station1.ratings.push({
+  rate: 8,
+  timeSlot: 98,
+  dayOfWeek: 'Tuesday'
+})
+
+station1.ratings.push({
+  rate: 9,
+  timeSlot: 98,
+  dayOfWeek: 'Tuesday'
+})
+
+station1.ratings.push({
+  rate: 8,
+  timeSlot: 102,
+  dayOfWeek: 'Tuesday'
+})
+
+station1.ratings.push({
+  rate: 7.5,
+  timeSlot: 103,
+  dayOfWeek: 'Tuesday'
+})
+
+station1.ratings.push({
+  rate: 7,
+  timeSlot: 104,
+  dayOfWeek: 'Tuesday'
+})
+
+station1.ratings.push({
+  rate: 7,
+  timeSlot: 105,
+  dayOfWeek: 'Tuesday'
+})
+
+station1.ratings.push({
+  rate: 7,
+  timeSlot: 106,
+  dayOfWeek: 'Tuesday'
+})
+
+station1.ratings.push({
+  rate: 7,
+  timeSlot: 102,
+  dayOfWeek: 'Tuesday'
+})
+
+station1.ratings.push({
+  rate: 9,
+  timeSlot: 101,
+  dayOfWeek: 'Tuesday'
+})
+
+station1.ratings.push({
+  rate: 10,
+  timeSlot: 100,
+  dayOfWeek: 'Tuesday'
+})
+
+station1.ratings.push({
+  rate: 9.5,
+  timeSlot: 99,
+  dayOfWeek: 'Tuesday'
+})
+
+station1.ratings.push({
+  rate: 6.5,
+  timeSlot: 106,
+  dayOfWeek: 'Tuesday'
+})
+
+station1.ratings.push({
+  rate: 7,
+  timeSlot: 103,
+  dayOfWeek: 'Tuesday'
+})
+
+
+
+station1.ratings.push({
+  rate: 10,
+  timeSlot: 100,
+  dayOfWeek: 'Monday'
+})
+
+station1.ratings.push({
+  rate: 9.5,
+  timeSlot: 98,
+  dayOfWeek: 'Monday'
+})
+
+station1.ratings.push({
+  rate: 9.5,
+  timeSlot: 99,
+  dayOfWeek: 'Monday'
+})
+
+station1.ratings.push({
+  rate: 10,
+  timeSlot: 101,
+  dayOfWeek: 'Monday'
+})
+
+station1.ratings.push({
+  rate: 8,
+  timeSlot: 98,
+  dayOfWeek: 'Monday'
+})
+
+station1.ratings.push({
+  rate: 10,
+  timeSlot: 99,
+  dayOfWeek: 'Monday'
+})
+
+station1.ratings.push({
+  rate: 9,
+  timeSlot: 98,
+  dayOfWeek: 'Monday'
+})
+
+station1.ratings.push({
+  rate: 8,
+  timeSlot: 102,
+  dayOfWeek: 'Monday'
+})
+
+station1.ratings.push({
+  rate: 8,
+  timeSlot: 103,
+  dayOfWeek: 'Monday'
+})
+
+station1.ratings.push({
+  rate: 7.5,
+  timeSlot: 104,
+  dayOfWeek: 'Monday'
+})
+
+station1.ratings.push({
+  rate: 7,
+  timeSlot: 105,
+  dayOfWeek: 'Monday'
+})
+
+station1.ratings.push({
+  rate: 7,
+  timeSlot: 106,
+  dayOfWeek: 'Monday'
+})
+
+station1.ratings.push({
+  rate: 7,
+  timeSlot: 102,
+  dayOfWeek: 'Monday'
+})
+
+station1.ratings.push({
+  rate: 9,
+  timeSlot: 101,
+  dayOfWeek: 'Monday'
+})
+
+station1.ratings.push({
+  rate: 10,
+  timeSlot: 100,
+  dayOfWeek: 'Monday'
+})
+
+station1.ratings.push({
+  rate: 9.5,
+  timeSlot: 99,
+  dayOfWeek: 'Monday'
+})
+
+station1.ratings.push({
+  rate: 6.5,
+  timeSlot: 106,
+  dayOfWeek: 'Monday'
+})
+
+station1.ratings.push({
+  rate: 7,
+  timeSlot: 103,
+  dayOfWeek: 'Monday'
+})
+
+station1.ratings.push({
+  rate: 8.5,
+  timeSlot: 97,
+  dayOfWeek: 'Monday'
+})
+
+station1.ratings.push({
+  rate: 8,
+  timeSlot: 96,
+  dayOfWeek: 'Monday'
+})
+
+station1.ratings.push({
+  rate: 8,
+  timeSlot: 95,
+  dayOfWeek: 'Monday'
+})
+
+
 station1.save(function(err,station){
   if(err) console.log(err)
     console.log('station1 saved', station)
 })
 
-
-var station2 = new Station({
-  name: "Vauxhall"
+station2.ratings.push({
+  rate: 8,
+  timeSlot: 100,
+  dayOfWeek: 'Tuesday'
 })
 
 station2.ratings.push({
@@ -33,152 +295,139 @@ station2.ratings.push({
   dayOfWeek: 'Tuesday'
 })
 
-station2.save(function(err,station){
-  if(err) console.log(err)
-    console.log('station2 saved', station)
-})
-
-var station3 = new Station({
-  name: "Vauxhall"
-})
-
-station3.ratings.push({
+station2.ratings.push({
   rate: 9,
   timeSlot: 99,
   dayOfWeek: 'Tuesday'
+})
+
+station2.ratings.push({
+  rate: 10,
+  timeSlot: 101,
+  dayOfWeek: 'Tuesday'
+})
+
+station2.ratings.push({
+  rate: 8,
+  timeSlot: 98,
+  dayOfWeek: 'Tuesday'
+})
+
+station2.ratings.push({
+  rate: 9,
+  timeSlot: 98,
+  dayOfWeek: 'Tuesday'
+})
+
+station2.ratings.push({
+  rate: 8,
+  timeSlot: 102,
+  dayOfWeek: 'Tuesday'
+})
+
+station2.ratings.push({
+  rate: 7.5,
+  timeSlot: 103,
+  dayOfWeek: 'Tuesday'
+})
+
+station2.ratings.push({
+  rate: 7,
+  timeSlot: 104,
+  dayOfWeek: 'Tuesday'
+})
+
+station2.ratings.push({
+  rate: 7,
+  timeSlot: 105,
+  dayOfWeek: 'Tuesday'
+})
+
+station2.ratings.push({
+  rate: 7,
+  timeSlot: 106,
+  dayOfWeek: 'Tuesday'
+})
+
+station2.ratings.push({
+  rate: 7,
+  timeSlot: 102,
+  dayOfWeek: 'Tuesday'
+})
+
+station2.ratings.push({
+  rate: 9,
+  timeSlot: 101,
+  dayOfWeek: 'Tuesday'
+})
+
+station2.ratings.push({
+  rate: 10,
+  timeSlot: 100,
+  dayOfWeek: 'Tuesday'
+})
+
+station2.ratings.push({
+  rate: 9.5,
+  timeSlot: 99,
+  dayOfWeek: 'Tuesday'
+})
+
+station2.ratings.push({
+  rate: 6.5,
+  timeSlot: 106,
+  dayOfWeek: 'Tuesday'
+})
+
+station2.ratings.push({
+  rate: 7,
+  timeSlot: 103,
+  dayOfWeek: 'Tuesday'
+})
+
+station1.save(function(err,station){
+  if(err) console.log(err)
+    console.log('station1 saved', station)
+})
+
+station2.save(function(err,station){
+  if(err) console.log(err)
+    console.log('station2 saved', station)
 })
 
 station3.save(function(err,station){
   if(err) console.log(err)
     console.log('station3 saved', station)
 })
-
-var station4 = new Station({
-  name: "Vauxhall"
-})
-
-station4.ratings.push({
-  rate: 10,
-  timeSlot: 101,
-  dayOfWeek: 'Tuesday'
-})
-
 station4.save(function(err,station){
   if(err) console.log(err)
     console.log('station4 saved', station)
 })
-
-var station5 = new Station({
-  name: "Vauxhall"
-})
-
-station5.ratings.push({
-  rate: 8,
-  timeSlot: 98,
-  dayOfWeek: 'Tuesday'
-})
-
 station5.save(function(err,station){
   if(err) console.log(err)
     console.log('station5 saved', station)
 })
-
-var station6 = new Station({
-  name: "Vauxhall"
-})
-
-station6.ratings.push({
-  rate: 9,
-  timeSlot: 98,
-  dayOfWeek: 'Tuesday'
-})
-
 station6.save(function(err,station){
   if(err) console.log(err)
     console.log('station6 saved', station)
-})
-
-
-var station7 = new Station({
-  name: "Vauxhall"
-})
-
-station7.ratings.push({
-  rate: 8,
-  timeSlot: 102,
-  dayOfWeek: 'Tuesday'
 })
 
 station7.save(function(err,station){
   if(err) console.log(err)
     console.log('station7 saved', station)
 })
-
-
-var station8 = new Station({
-  name: "Vauxhall"
-})
-
-station8.ratings.push({
-  rate: 7.5,
-  timeSlot: 103,
-  dayOfWeek: 'Tuesday'
-})
-
 station8.save(function(err,station){
   if(err) console.log(err)
     console.log('station8 saved', station)
 })
-
-
-var station9 = new Station({
-  name: "Vauxhall"
-})
-
-station9.ratings.push({
-  rate: 7,
-  timeSlot: 104,
-  dayOfWeek: 'Tuesday'
-})
-
 station9.save(function(err,station){
   if(err) console.log(err)
     console.log('station9 saved', station)
 })
-
-
-var station10 = new Station({
-  name: "Vauxhall"
-})
-
-station10.ratings.push({
-  rate: 7,
-  timeSlot: 105,
-  dayOfWeek: 'Tuesday'
-})
-
 station10.save(function(err,station){
   if(err) console.log(err)
     console.log('station10 saved', station)
 })
-
-
-var station11 = new Station({
-  name: "Vauxhall"
-})
-
-station11.ratings.push({
-  rate: 7,
-  timeSlot: 106,
-  dayOfWeek: 'Tuesday'
-})
-
-station11.save(function(err,station){
-  if(err) console.log(err)
-    console.log('station11 saved', station)
-})
-
-
 
 // {
 // "station_code": "OVL",

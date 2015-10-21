@@ -27,12 +27,12 @@ function createStation(request, response) {
 
 // GET
 function getStation(request, response) {
-  // var id = request.params.id;
+  var id = request.params.id;
 
-  // Station.findById({_id: id}, function(error, post) {
-  //   if(error) response.json({message: 'Could not find post b/c:' + error});
-  //   response.json({post: post});
-  // }).select('-__v');
+  Station.findById({_id: id}, function(error, station) {
+    if(error) response.json({message: 'Could not find station b/c:' + error});
+    response.json({station: station});
+  }).select('-__v');
 }
 
 function updateStation(request, response) {

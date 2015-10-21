@@ -1,0 +1,9 @@
+<h1>Station: {{ stations.oneStation.name }}</h1>
+<section>
+    <div class="graphicBar" ng-repeat="rating in stations.oneStation.ratings" style="height: {{rating.rate}}0px;" 
+    ng-class="
+    {{rating.rate}} > 9 ? 'red' : 
+    ({{rating.rate}} > 8 ? 'orange' : 
+    ({{rating.rate}} > 7 ? 'yellow' : 'green'))">
+    </div>
+</section>
