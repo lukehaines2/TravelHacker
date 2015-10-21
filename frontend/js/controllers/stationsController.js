@@ -21,7 +21,7 @@ function stationsController($http){
   getStations();
 
   function getStations(){
-    console.log('gettting stations')
+    console.log('getting stations')
     $http
       .get('http://localhost:3000/stations')
       .then(function(response){

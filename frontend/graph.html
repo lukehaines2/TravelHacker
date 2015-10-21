@@ -1,9 +1,30 @@
-<h1>Station: {{ stations.oneStation.name }}</h1>
-<section>
+
+<!-- <h1>Station: {{ stations.oneStation.name }}</h1> -->
+<!-- <section>
     <div class="graphicBar" ng-repeat="rating in stations.oneStation.ratings" style="height: {{rating.rate}}0px;" 
     ng-class="
     {{rating.rate}} > 9 ? 'red' : 
     ({{rating.rate}} > 8 ? 'orange' : 
     ({{rating.rate}} > 7 ? 'yellow' : 'green'))">
+ -->
+<h2>{{ stations.oneStation.name }} station</h2>
+<section>
+    
+    <div class='bars-container'>
+
+      <div class="bar-holder" ng-repeat="rating in stations.oneStation.ratings | limitTo: 24| orderBy:'timeSlot'">
+        <div class="graphicBar" style="height: {{rating.rate}}0px;" ng-class="{{rating.rate}} > 9 ? 'red' : 
+        ({{rating.rate}} > 8 ? 'orange' : 
+        ({{rating.rate}} > 7 ? 'yellow' : 'green'))">
+        </div>
+        <div class="x-label">
+          {{(rating.timeSlot/100).toFixed(2)}}
+        </div>
+
+      </div>
+
     </div>
+
+   
+
 </section>
