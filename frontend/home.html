@@ -1,7 +1,8 @@
+<div class="landing-box">
 
 <section>
   <!-- <form ui-sref="graph" ng-click="stations.getStation(station._id)"> -->
-  <div>
+  <div class="selected-station">
     <label for="inputSelectStation">Select Station: </label> 
     <select name="inputSelectStation" ng-model="data.inputSelectStation">
     <option ng-repeat="station in stations.all" value="{{station._id}}">{{station.name}}</option>
@@ -13,9 +14,7 @@
     <button class="button" ui-sref="graph" ng-click="stations.getStation(data)">Go</button>
   </div>
 </section>
-
-
-
+</div>
 
 
 

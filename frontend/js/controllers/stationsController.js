@@ -30,18 +30,14 @@ function stationsController($http){
   }
 
   function getStation(data){
-    console.log('getting one station', data.inputSelectStation);
-    console.log('getting time due', data.inputSelectArrive);
     $http
       .get('http://localhost:3000/stations/' + data.inputSelectStation)
       .then(function(response){
         self.dataFromUser = { data };
         self.oneStation = response.data.station;
-        console.log('station id IS!!!!!:', self.oneStation.name);
-        console.log('station id IS!!!!!:', self.dataFromUser);
     });
   }
-
+}
 
   // function addStation(){
   //   $http
@@ -73,10 +69,3 @@ function stationsController($http){
   // }
 
 
-
-
-
-
-
-
-}
