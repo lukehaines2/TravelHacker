@@ -1,7 +1,28 @@
 body {
-  background-color: hotpink;
+  /*background-color: hotpink;*/
+  background-image: url('http://www.richardalois.com/wp-content/uploads/2013/12/Clapham-Common-Tube-Station.jpg');
+  background-image: no-repeat;
+  background-size: cover;
   font-size: 16px;
-  color: black;
+  color: white;
+}
+
+.landing-box {
+  /*width: 40%;*/
+  /*height: 76.6%;*/
+  z-index: 99;
+  /*float: right;*/
+  border: 10px solid rgba(0,0,0,0.1);
+  /*display: none;*/
+  /*position: absolute;*/
+  right: 0;
+  top: 17.3%;
+  background-color: rgba(0,0,0,0.75);
+  /*color: white;*/
+  overflow: auto;
+  /*padding-left: 7px;*/
+  text-align: center;
+  vertical-align: middle;
 }
 
 ul {
@@ -16,14 +37,23 @@ label {
 }
 input {
   margin: 10px 0;
-
+}
 
 .header-logo {
-  text-align: center;
+  text-align: left;
   text-decoration: none;
-  border: 1px solid red;
+  font-size: 60px;
+  margin-bottom: 6%;
+  /*border: 1px solid red;*/
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: white;
+}
+
+section .selected-station {
+  text-align: center;
+  /*border: 5px solid red;*/
+}
+

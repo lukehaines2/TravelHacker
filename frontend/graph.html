@@ -1,13 +1,11 @@
-<h1>Hello graph new</h1>
 <section>
-<p>name: {{ stations.oneStation.name }}</p>
-
-  <ul id="stations">
-    <div>
-      
-        <li class="" ng-repeat="rating in stations.oneStation.ratings">rate: {{ rating.rate }}
-        </li>
-      
-    </div>
-  </ul>
+  <div class="landing-box">
+    <h1>Busy periods for {{ stations.oneStation.name }} station</h1>
+  <!-- <p>name: {{ stations.oneStation.name }}</p> -->
+    <ul id="stations">
+      <div>
+        <li ng-repeat="rating in stations.oneStation.ratings">rate: {{ rating.rate }}</li>   
+      </div>
+    </ul>
+  </div>
 </section>
