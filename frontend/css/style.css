@@ -2,6 +2,7 @@ body {
   background-color: hotpink;
   font-size: 16px;
   color: black;
+  min-width: 390px;
 }
 
 ul {
@@ -29,12 +30,30 @@ a {
   color: black;
 }
 
-.graphicBar {
-  background-color: rgba(255,255,255,0.5);
-  width: 20px;
-  margin: 5px;
+.bar-holder {
+
   display: inline-table;
+  margin: 0.04%;
+  border: 1px solid black;
+  width: 3.7%;
+  text-align:center;
+
 }
+
+.graphicBar {
+  /*display: inline-table;
+  margin: 0.04%;
+  border: 1px solid black;
+  width: 3.7%;*/
+}
+
+.x-label {
+ /* display: inline-table;
+  margin: 0.04%;
+  width: 3.7%;
+  border: 1px solid black;*/
+}
+
 .red {
   background-color: red;
 }
@@ -43,4 +62,9 @@ a {
 }
 .yellow {
   background-color: yellow;
+}
+
+.vertical-text {
+  transform: rotate(90deg);
+  transform-origin: left top 0;
 }
