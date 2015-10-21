@@ -1,29 +1,23 @@
 body {
-  /*background-color: hotpink;*/
   background-image: url('http://www.richardalois.com/wp-content/uploads/2013/12/Clapham-Common-Tube-Station.jpg');
   background-image: no-repeat;
   background-size: cover;
   font-size: 16px;
   color: white;
-    /*min-width: 390px;*/
 }
 
 .landing-box {
-  /*width: 40%;*/
-  /*height: 76.6%;*/
   z-index: 99;
-  /*float: right;*/
   border: 10px solid rgba(0,0,0,0.1);
-  /*display: none;*/
-  /*position: absolute;*/
   right: 0;
   top: 17.3%;
   background-color: rgba(0,0,0,0.75);
-  /*color: white;*/
   overflow: auto;
-  /*padding-left: 7px;*/
   text-align: center;
   vertical-align: middle;
+  padding top: 20px;
+  padding-bottom: 20px;
+  padding-left: 5px;
 }
 
 ul {
@@ -31,13 +25,16 @@ ul {
 }
 li {
   letter-spacing: 120%;
+  margin-bottom: 20px 0;
 }
 
 label {
   margin: 10px 0;
+  color: white;
 }
 input {
-  margin: 10px 0;
+  margin: 20px 0;
+  color: black;
 }
 
 .header-logo {
@@ -45,17 +42,23 @@ input {
   text-decoration: none;
   font-size: 60px;
   margin-bottom: 6%;
-  /*border: 1px solid red;*/
 }
 
 a {
   text-decoration: none;
   color: white;
+  text-align: center;
+}
+
+a #main-header {
+  text-align: center;
+  padding-left: 90px; 
 }
 
 section .selected-station {
   text-align: center;
-  /*border: 5px solid red;*/
+  padding-top: 20px;
+  color: black;
 }
 
 .bar-holder {
@@ -64,20 +67,6 @@ section .selected-station {
   border: 1px solid black;
   width: 3.7%;
   text-align:center;
-}
-
-.graphicBar {
-  /*display: inline-table;
-  margin: 0.04%;
-  border: 1px solid black;
-  width: 3.7%;*/
-}
-
-.x-label {
- /* display: inline-table;
-  margin: 0.04%;
-  width: 3.7%;
-  border: 1px solid black;*/
 }
 
 .red {

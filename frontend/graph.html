@@ -7,12 +7,12 @@
     ({{rating.rate}} > 8 ? 'orange' : 
     ({{rating.rate}} > 7 ? 'yellow' : 'green'))">
  -->
-<h2>Busy Periods for {{ stations.oneStation.name }} Station:</h2>
 <section>
   <div class="landing-box">
+    <h2>Busy Periods for {{ stations.oneStation.name }} Station:</h2><br>
     <div class='bars-container'>
       <div class="bar-holder" ng-repeat="rating in stations.oneStation.ratings | limitTo: 24| orderBy:'timeSlot'">
-        <div class="graphicBar" style="height: {{rating.rate}}0px;" ng-class="{{rating.rate}} > 9 ? 'red' : 
+        <div class="graphicBar" style="height: {{(rating.rate)*20}}px;" ng-class="{{rating.rate}} > 9 ? 'red' : 
         ({{rating.rate}} > 8 ? 'orange' : 
         ({{rating.rate}} > 7 ? 'yellow' : 'green'))">
         </div>
